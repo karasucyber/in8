@@ -31,19 +31,87 @@ export const Container1 = styled.div({
     },
 });
 
+export const ContainerTexto1 = styled.div({
+    display: "flex",
+    justifyContent: "flex-start",
+    alignItems: "center",
+    width:"50%",
+    height: "30%",
+}) 
 
+export const ContainerSubTexto1 = styled.div({
+    width:"50 %",
+    height: "0%",
+}) 
+
+
+import { css } from 'styled-components';
+
+export const FraseEfeito = styled.h1(({ theme }) => ({
+    fontFamily: 'Helvetica UltraLight, sans-serif',
+    fontSize: '100px',
+    fontWeight: '100', 
+    color: "white",
+  }));
+  
+  export const SubFraseEfeito = styled.h1({
+    fontFamily: 'Helvetica UltraLight, sans-serif',
+    fontSize: '50px',
+    fontWeight: '100', 
+    color: "white",
+  });
 /*Parte2*/
 export const Container2 = styled.div({
     display: "flex",
     flexDirection: "column",
     alignItems: "center",
     width: "100%",
-    height: "940px",/* Mesma altura que a imagem possui */
+    height: "700px",/* Mesma altura que a imagem possui */
     background: "#29abe2", /*Fundo proposto*/
     margin: "0px", 
     padding: "0px", 
-    
 })
+
+export const ContainerForm = styled.div({
+    display: "flex",
+    flexDirection: "column",
+    justifyContent: "center", 
+    alignItems: "flex-start", 
+    gap: "10px",
+    height: "400px"
+  });
+
+export const Label = styled.label({
+    color: "white",
+    fontSize: "10px"
+})
+
+export const Input = styled.input({
+    width: "500px",
+    background: "#29abe2",
+    border: "none",
+    color: "white",
+    borderBottom: "1px solid white" // Adiciona uma borda preta na parte inferior
+})
+
+export const ContainerButton = styled.div({
+    display: "flex",
+    justifyContent: "center", 
+})
+
+export const ButtonCadastro = styled.button({
+    width: "300px",
+    height: "70px",
+    fontSize: "50px",
+    background: "#012d51",
+    color: "#29abe2"
+})
+
+export const Titulo2 = styled.h1({
+    fontSize: "50px"
+})
+
+/* */
 /*Parte3*/
 export const Container3 = styled.div({
     display: "flex",

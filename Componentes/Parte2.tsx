@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Container2 } from "./Styled";
+import { Container2, ContainerForm, Label, Input,ButtonCadastro, Titulo2, ContainerButton } from "./Styled";
 import { TypeCadastro } from "./CRUD/TypeCadastro";
 
 type Props = {
@@ -40,20 +40,22 @@ export const Parte2 = (props: Props) => {
 
   return (
     <Container2>
+              <Titulo2>Cadastro </Titulo2>
       <form onSubmit={onSumitBTN}>
-        <div>
-          <label>Nome </label>
-          <input type="text" value={nome} onChange={NameChange}></input>
-          <label>Email</label>
-          <input type="email" value={email} onChange={EmailChange}></input>
-          <label>Data nascimento</label>
-          <input type="text" value={dataNascimento} onChange={DataNacimentoChange}></input>
-          <label >Telefone</label>
-          <input type="text" value={telefone} onChange={TelefoneChange}></input>
-        </div>
-        <div>
-          <input type="submit" value="add"></input>
-        </div>
+        <ContainerForm>
+        <Label>Nome </Label>
+          <Input type="text" value={nome} onChange={NameChange}></Input>
+          <Label>Email</Label>
+          <Input type="email" value={email} onChange={EmailChange}></Input>
+          <Label>Data nascimento</Label>
+          <Input type="text" value={dataNascimento} onChange={DataNacimentoChange}></Input>
+          <Label >Telefone</Label>
+          <Input type="text" value={telefone} onChange={TelefoneChange}></Input>
+        </ContainerForm>
+        <ContainerButton>
+        <ButtonCadastro type="submit" value="add">Cadastro</ButtonCadastro>
+        </ContainerButton>
+  
       </form>
     </Container2>
   )
