@@ -21,6 +21,8 @@ type Props = {
     <th>Email</th>
     <th>Nascimento</th>
     <th>Telefone</th>
+    <th></th>
+
   </tr>
   {list.map(cadastro =>{
     console.log(cadastro);
@@ -31,7 +33,14 @@ type Props = {
     <td >{cadastro.email}</td>
     <td >{cadastro.dataNascimento}</td>
     <td >{cadastro.telefone}</td>
+  
+  <div>
+    <input type="button" value="View"></input>
+    <input type="button" value="Edit"></input>
+    <input type="button" value="Delete"></input>  
+  </div>
   </tr>
+
   </>)})}
 
 </table>
