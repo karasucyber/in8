@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import styled from "styled-components";
 
 export const metadata: Metadata = {
   title: "IN8",
@@ -12,15 +11,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
 
-  const Body = styled.body`
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-`;
 
   return (
     <html lang="pt-BR">
-      <Body>{children}</Body>
-    </html>
+      <body style={{  margin: "0px", padding: "0px", boxSizing: "border-box"}}>{children}</body>
+    </html >
   );
 }
