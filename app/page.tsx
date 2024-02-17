@@ -1,23 +1,37 @@
+
 'use client'
-import { dummyCadastrolist } from '@/Componentes/CRUD/TypeCadastro';
+import { PageEnum, TypeCadastro, dummyCadastrolist } from '@/Componentes/CRUD/TypeCadastro';
 import Footer from '@/Componentes/Footer';
 import Parte1 from '@/Componentes/Parte1';
 import Parte2 from '@/Componentes/Parte2';
 import Parte3 from '@/Componentes/Parte3';
-import React from 'react';
+import React, { useState } from 'react';
 import styled from 'styled-components';
-
 const Body = styled.div({
   margin: "0px", padding: "0px", boxSizing: "border-box"
 })
 
 export default function Home() {
+  const [cadastroList, setCadastroList] = useState([] as TypeCadastro[]);
+  const [shownPage, setShownPage] = useState('list'); 
+  const addCadastro = (data: TypeCadastro) => {
+    setCadastroList([...cadastroList, data]);
+  }
+
   return (
-    <>
-      <Parte1/>
-      <Parte2/>
-      <Parte3 list={dummyCadastrolist} />
-      <Footer/>
-    </>    
+    <Body>
+      <Parte1 />
+      {shownPage === 'list' && (
+        <>
+          <Parte2 onSumit={addCadastro} />
+          <Parte3 list={cadastroList} />
+        </>
+      )}
+      {shownPage === 'add' && (
+        <>
+          <Parte2 onSumit={addCadastro} />
+        </>
+      )}
+    </Body>
   );
 }

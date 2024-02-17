@@ -28,7 +28,6 @@ type Props = {
     console.log(cadastro);
     return(<>
     <tr key={cadastro.id}>
-    <td >{cadastro.contador}</td>
     <td >{cadastro.nome}</td>
     <td >{cadastro.email}</td>
     <td >{cadastro.dataNascimento}</td>
