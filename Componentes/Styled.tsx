@@ -137,6 +137,7 @@ export const ContainerCadastrados = styled.div({
 export const ContainerFoooter = styled.div({
     display: "flex",
     justifyContent: "center",
+    alignItems: "center",
     width: "100%",
     height: "334px", /* Mesma altura que a imagem possui */
     backgroundImage: `url('/rodape-desktop.jpg')`,
