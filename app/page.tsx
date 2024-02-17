@@ -1,4 +1,5 @@
 'use client'
+import { dummyCadastrolist } from '@/Componentes/CRUD/TypeCadastro';
 import Footer from '@/Componentes/Footer';
 import Parte1 from '@/Componentes/Parte1';
 import Parte2 from '@/Componentes/Parte2';
@@ -15,7 +16,7 @@ export default function Home() {
     <>
       <Parte1/>
       <Parte2/>
-      <Parte3/>
+      <Parte3 list={dummyCadastrolist} />
       <Footer/>
     </>    
   );
