@@ -32,6 +32,7 @@ export default function Home() {
           <Parte2 onSumit={addCadastro} />
         </>
       )}
+      <Footer></Footer>
     </Body>
   );
 }
