@@ -144,7 +144,6 @@ const Parte3 = (props: Props) => {
                   <CadastroItem key={cadastro.id}>
                     <Icon onClick={toggleButtons}></Icon>
                     <Buttons visible={buttonsVisible}>
-                      <input type="button" value="Edit"></input>
                       <input type="button" value="Delete" onClick={() => onDeleteClick(cadastro)}></input>
                     </Buttons>
                   </CadastroItem>
