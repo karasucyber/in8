@@ -1,6 +1,5 @@
 
 export interface TypeCadastro{
-    position: number;
     id: string; 
     nome: string; /* name*/
     email: string;

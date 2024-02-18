@@ -167,4 +167,3 @@ const Parte3 = (props: Props) => {
 export default Parte3;
 
 
-
