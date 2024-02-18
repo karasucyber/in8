@@ -59,6 +59,8 @@ export const NavbarContainer = styled.nav({
   
   });
 /* */
+
+
 /* Parte1*/
 export const Container1 = styled.div({
     display: "flex",
@@ -93,6 +95,17 @@ export const ContainerTexto1 = styled.div({
     alignItems: "center",
     width:"50%",
     height: "30%",
+
+    '@media only screen and (max-width: 780px)': {
+      justifyContent: "center",
+      width: "100%",
+      height: "10%",
+  },
+
+  '@media only screen and (min-width: 781px) and (max-width: 1024px)': {
+
+  },
+    
 }) 
 
 export const ContainerSubTexto1 = styled.div({
@@ -104,18 +117,35 @@ export const ContainerSubTexto1 = styled.div({
 import { css } from 'styled-components';
 
 export const FraseEfeito = styled.h1(({ theme }) => ({
-    fontFamily: 'Helvetica UltraLight, sans-serif',
-    fontSize: '100px',
-    fontWeight: '100', 
-    color: "white",
-  }));
+  fontFamily: 'Helvetica UltraLight, sans-serif',
+  fontSize: '100px',
+  color: "white",
+  fontWeight: 100, 
+
+  '@media only screen and (max-width: 780px)': {
+    fontSize: "70px"
+  },
+
+  '@media only screen and (min-width: 781px) and (max-width: 1024px)': {
+  },
+}));
   
   export const SubFraseEfeito = styled.h1({
     fontFamily: 'Helvetica UltraLight, sans-serif',
     fontSize: '50px',
     fontWeight: '100', 
     color: "white",
+
+    '@media only screen and (max-width: 780px)': {
+      fontSize: "30px"
+  },
+
+  '@media only screen and (min-width: 781px) and (max-width: 1024px)': {
+
+  },
   });
+
+/*  */
 /*Parte2*/
 export const Container2 = styled.div({
     display: "flex",
@@ -134,7 +164,13 @@ export const ContainerForm = styled.div({
     justifyContent: "center", 
     alignItems: "flex-start", 
     gap: "10px",
-    height: "400px"
+    height: "400px",
+    '@media only screen and (max-width: 780px)': {
+  },
+
+  '@media only screen and (min-width: 781px) and (max-width: 1024px)': {
+
+  },
   });
 
 export const Label = styled.label({
@@ -147,7 +183,14 @@ export const Input = styled.input({
     background: "#29abe2",
     border: "none",
     color: "white",
-    borderBottom: "1px solid white" 
+    borderBottom: "1px solid white", 
+    '@media only screen and (max-width: 780px)': {
+      width: "400px",    
+  },
+
+  '@media only screen and (min-width: 781px) and (max-width: 1024px)': {
+
+  },
 })
 
 export const ContainerButton = styled.div({
@@ -177,6 +220,13 @@ export const Container3 = styled.div({
     background: "",
     margin: "0px", 
     padding: "0px", 
+    '@media only screen and (max-width: 780px)': {
+      width: "500px",    
+  },
+
+  '@media only screen and (min-width: 781px) and (max-width: 1024px)': {
+
+  },
 })
 
 export const ContainerCadastrados = styled.div({
@@ -191,50 +241,6 @@ export const ContainerCadastrados = styled.div({
 
 })
 
-/*Footer*/
-export const ContainerFoooter = styled.div({
-    display: "flex",
-    justifyContent: "center",
-    alignItems: "center",
-    width: "100%",
-    height: "334px", /* Mesma altura que a imagem possui */
-    backgroundImage: `url('/rodape-desktop.jpg')`,
-    margin: "0px", 
-    padding: "0px", 
-    flexDirection: "column",
-    color: "white",
-    '@media only screen and (max-width: 780px)': {
-        height: '334px', // Ajuste a altura para dispositivos móveis
-        backgroundImage: `url('/rodape-mobile.jpg')`,
-        backgroundPosition: "center",
-        backgroundRepeat: "no-repeat",
-        backgroundSize: "cover",
-    },
-
-    '@media only screen and (min-width: 781px) and (max-width: 1024px)': {
-        height: '334px', // Ajuste a altura para tablets
-
-    },
-})
-
-export const Overlay = styled.div`
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-`;
-
-export const ModalContent = styled.div`
-  background-color: white;
-  padding: 20px;
-  border-radius: 8px;
-  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
-`;
 
 export const CadastroItem = styled.div`
   display: flex;
@@ -310,6 +316,38 @@ export const TabsContainer = styled.div`
     display: block;
   }
 `;
+
+/**/
+
+
+/*Footer*/
+export const ContainerFoooter = styled.div({
+    display: "flex",
+    justifyContent: "center",
+    alignItems: "center",
+    width: "100%",
+    height: "334px", /* Mesma altura que a imagem possui */
+    backgroundImage: `url('/rodape-desktop.jpg')`,
+    margin: "0px", 
+    padding: "0px", 
+    flexDirection: "column",
+    color: "white",
+    '@media only screen and (max-width: 780px)': {
+        height: '334px', // Ajuste a altura para dispositivos móveis
+        backgroundImage: `url('/rodape-mobile.jpg')`,
+        backgroundPosition: "center",
+        backgroundRepeat: "no-repeat",
+        backgroundSize: "cover",
+    },
+
+    '@media only screen and (min-width: 781px) and (max-width: 1024px)': {
+        height: '334px', // Ajuste a altura para tablets
+
+    },
+})
+
+
+
 
 /*Geral*/
 export const ContainerTitulo = styled.div({

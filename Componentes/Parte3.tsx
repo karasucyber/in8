@@ -6,6 +6,7 @@ import {
 import { TypeCadastro } from "./CRUD/TypeCadastro";
 import React, { useState } from "react";
 import { dummyCadastrolist } from "./CRUD/TypeCadastro";
+
 type Props = {
   list: TypeCadastro[]
   onDeleteClick: (data: TypeCadastro) => void;
