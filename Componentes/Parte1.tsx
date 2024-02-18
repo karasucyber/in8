@@ -1,6 +1,8 @@
 import React from "react";
 import { Container1, ContainerSubTexto1, ContainerTexto1, FraseEfeito, SubFraseEfeito } from "./Styled";
 import Navbar from "./Navbar";
+
+
 export const Parte1 = () => {
 
 
