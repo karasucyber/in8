@@ -18,8 +18,9 @@ export default function RootLayout({
   margin: "0px",
   padding: "0px",
   boxSizing: "border-box",
-
 }}
+
+
  >{children}</body>
     </html >
   );
