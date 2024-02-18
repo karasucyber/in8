@@ -95,19 +95,35 @@ export const Container1 = styled.div({
   },
 });
 
+export const ContainerTexto1 = styled.div`
+  ${(theme)=> FontFace }
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 50%;
+  height: 30%;
+  font-size: 50px;
+  font-family: 'Helvetica 25 UltraLight Regular', Arial, sans-serif;
+  font-weight: 100;
+  color: white;
+  
 
-export const ContainerTexto1 = styled.div({
-  display: "flex",
-  justifyContent: "flex-start",
-  alignItems: "center",
-  width:"50%",
-  height: "30%",
-  '@media only screen and (max-width: 780px)': {
-    justifyContent: "center",
-    width: "100%",
-    height: "10%",
-  },
-});
+  @media only screen and (max-width: 780px) {
+    justify-content: center;
+    width: 100%;
+    height: 10%;
+  }
+
+  @media only screen and (min-width: 781px) and (max-width: 1024px) {
+    /* Adicione estilos específicos para esta faixa de largura de tela, se necessário */
+  }
+  
+`;
+
+export const ContainerSubTexto1 = styled.div({
+  width:"50 %",
+  height: "0%",
+}) 
 
 
 export const FraseEfeito = styled.h1(({ theme }) => ({
