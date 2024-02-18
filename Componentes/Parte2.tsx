@@ -39,7 +39,7 @@ export const Parte2 = (props: Props) => {
   }
   return (
     <Container2>
-              <Titulo2>Cadastro </Titulo2>
+              <Titulo2>CADASTRO </Titulo2>
       <form onSubmit={onSumitBTN}>
         <ContainerForm>
         <Label>Nome </Label>
@@ -52,7 +52,7 @@ export const Parte2 = (props: Props) => {
           <Input type="text" value={telefone} onChange={TelefoneChange}></Input>
         </ContainerForm>
         <ContainerButton>
-        <ButtonCadastro type="submit" value="add">Cadastro</ButtonCadastro>
+        <ButtonCadastro type="submit" value="add">CADASTRAR</ButtonCadastro>
         </ContainerButton>
   
       </form>
