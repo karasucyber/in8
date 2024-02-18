@@ -37,7 +37,6 @@ export const Parte2 = (props: Props) => {
     }
     onSumit(data);
   }
-
   return (
     <Container2>
               <Titulo2>Cadastro </Titulo2>
