@@ -19,13 +19,22 @@ export default function Home() {
     setCadastroList([...cadastroList, data]);
   }
 
+  const DeleteCadastro = (data: TypeCadastro) => {
+    const indexToDelete = cadastroList.indexOf(data);
+    const tempList =  [...cadastroList]
+    tempList.splice(indexToDelete,1);
+    setCadastroList(tempList)
+  }
+
+
+  
   return (
     <Body>
       <Parte1 />
       {shownPage === 'list' && (
         <>
           <Parte2 onSumit={addCadastro} />
-          <Parte3 list={cadastroList} />
+          <Parte3 list={cadastroList} onDeleteClick={DeleteCadastro} />
         </>
       )}
       {shownPage === 'add' && (
@@ -33,7 +42,7 @@ export default function Home() {
           <Parte2 onSumit={addCadastro} />
         </>
       )}
-      <Footer></Footer>
+      <Footer/>
     </Body>
   );
 }

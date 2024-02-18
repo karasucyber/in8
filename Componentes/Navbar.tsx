@@ -14,8 +14,10 @@ const NavbarContent = styled.div({
   alignItems: 'center',
 });
 
-const NavbarTitle = styled.h1({
-  margin: '0',
+const NavbarTitle = styled.div({
+  background: "url(logo-in8-dev.svg)",
+  width: "171px",
+  height: "40px",
 });
 
 const NavbarMenu = styled.ul({
@@ -66,7 +68,7 @@ const Navbar = () => {
   return (
     <NavbarContainer>
       <NavbarContent>
-        <NavbarTitle>Logo</NavbarTitle>
+        <NavbarTitle/>
         <NavbarToggle onClick={() => toggleMenu()}>
           <FaBars />
         </NavbarToggle>
