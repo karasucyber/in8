@@ -128,8 +128,11 @@ export const ContainerCadastrados = styled.div({
     justifyContent: "center",  
     width: "100%",
     maxWidth: "800px",
+    maxHeight: "400px",
     margin: "0 auto",
-    padding: "20px"
+    padding: "20px", 
+    overflow: "auto ",
+
 })
 
 /*Footer*/

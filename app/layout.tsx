@@ -14,7 +14,13 @@ export default function RootLayout({
 
   return (
     <html lang="pt-BR">
-      <body style={{  margin: "0px", padding: "0px", boxSizing: "border-box"}}>{children}</body>
+      <body style={{
+  margin: "0px",
+  padding: "0px",
+  boxSizing: "border-box",
+
+}}
+ >{children}</body>
     </html >
   );
 }
