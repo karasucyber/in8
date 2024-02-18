@@ -116,7 +116,6 @@ export const Titulo2 = styled.h1({
 export const Container3 = styled.div({
     display: "flex",
     flexDirection: "column",
-    alignItems: "center",
     width: "100%",
     height: "700px",
     background: "",
@@ -144,6 +143,7 @@ export const ContainerFoooter = styled.div({
     margin: "0px", 
     padding: "0px", 
     flexDirection: "column",
+    color: "white",
     '@media only screen and (max-width: 780px)': {
         height: '334px', // Ajuste a altura para dispositivos móveis
         backgroundImage: `url('/rodape-mobile.jpg')`,
@@ -159,8 +159,9 @@ export const ContainerFoooter = styled.div({
 })
 /*Geral*/
 export const ContainerTitulo = styled.div({
-
-
+ display: "flex",
+    justifyContent: "center",  
+    width: "100%",
 
     
 })
