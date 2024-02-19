@@ -23,92 +23,6 @@ const FontFace = css`
   }
 `;
 
-/* Navbar */
-
-export const NavbarContainer = styled.nav`
-  color: #fff;
-  padding: 20px;
-  width: 50%;
-
-  @media (max-width: 768px) {
-    width: 100%;
-  }
-`;
-
-export const NavbarContent = styled.div`
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-`;
-
-export const NavbarTitle = styled.div`
-  background: url(logo-in8-dev.svg);
-  width: 171px;
-  height: 40px;
-`;
-
-export const NavbarMenu = styled.ul`
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  align-items: center;
-
-  @media (max-width: 768px) {
-    display: none;
-  }
-`;
-
-export const NavbarMenuItem = styled.li`
-  margin-right: 20px;
-`;
-
-export const NavbarLink = styled.a`
-  color: #fff;
-  text-decoration: none;
-
-  &:hover {
-    text-decoration: underline;
-  }
-`;
-
-export const NavbarToggle = styled.button`
-  display: none;
-  background-color: transparent;
-  color: #fff;
-  border: none;
-  cursor: pointer;
-
-  @media (max-width: 768px) {
-    display: block;
-  }
-`;
-
-export const DropdownMenu = styled.div`
-  display: none;
-  position: absolute;
-  top: 100%;
-  left: 0;
-  background-color: #333;
-  padding: 10px;
-  width: 100%;
-
-  @media (max-width: 768px) {
-  }
-`;
-
-export const DropdownMenuItem = styled.div`
-  margin-bottom: 10px;
-`;
-
-export const MobileMenuIcon = styled.div`
-  display: none;
-
-  @media (max-width: 768px) {
-    display: block;
-  }
-`;
-
 /* Parte 1 */
 export const Container1 = styled.div({
   display: "flex",
@@ -162,6 +76,12 @@ export const ContainerTexto1 = styled.div`
 export const ContainerSubTexto1 = styled.div({
   width:"50 %",
   height: "0%",
+  '@media only screen and (max-width: 780px)': {
+
+  },
+  '@media only screen and (min-width: 781px) and (max-width: 1024px)': {
+
+  },
 }) 
 
 
@@ -193,6 +113,12 @@ export const Container2 = styled.div({
   background: "#29abe2", /*Fundo proposto*/
   margin: "0px", 
   padding: "0px", 
+  '@media only screen and (max-width: 780px)': {
+
+  },
+  '@media only screen and (min-width: 781px) and (max-width: 1024px)': {
+
+  },
 });
 
 export const ContainerForm = styled.div({
@@ -202,11 +128,18 @@ export const ContainerForm = styled.div({
   alignItems: "flex-start", 
   gap: "10px",
     height: "400px",
+    '@media only screen and (max-width: 780px)': {
+
+    },
+    '@media only screen and (min-width: 781px) and (max-width: 1024px)': {
+  
+    },
 });
 
 export const Label = styled.label({
   color: "white",
   fontSize: "10px"
+  
 });
 
 export const Input = styled.input({
@@ -214,12 +147,24 @@ export const Input = styled.input({
   background: "#29abe2",
   border: "none",
   color: "white",
-  borderBottom: "1px solid white", 
+  borderBottom: "1px solid ", 
+  '@media only screen and (max-width: 780px)': {
+
+  },
+  '@media only screen and (min-width: 781px) and (max-width: 1024px)': {
+
+  },
 });
 
 export const ContainerButton = styled.div({
   display: "flex",
   justifyContent: "center", 
+  '@media only screen and (max-width: 780px)': {
+
+  },
+  '@media only screen and (min-width: 781px) and (max-width: 1024px)': {
+
+  },
 });
 
 export const ButtonCadastro = styled.button`
@@ -251,7 +196,18 @@ export const Container3 = styled.div({
   background: "",
   margin: "0px", 
   padding: "0px", 
+  '@media only screen and (max-width: 780px)': {
+    height: "400px",
+
+
+  },
+  '@media only screen and (min-width: 781px) and (max-width: 1024px)': {
+    height: "700px",
+
+
+  },
 });
+
 
 
 
@@ -260,18 +216,36 @@ export const ContainerResponsivo1 = styled.div({
   height: "100%",
   display: "flex",
   justifyContent: "center", 
+  '@media only screen and (max-width: 780px)': {
+
+  },
+  '@media only screen and (min-width: 781px) and (max-width: 1024px)': {
+
+  },
 });
 
 export const ContainerResponsivo2= styled.div({
   width: "100%",
   margin: "auto", // Centralizando horizontalmente
   justifyContent: "flex-start", 
+  '@media only screen and (max-width: 780px)': {
+
+  },
+  '@media only screen and (min-width: 781px) and (max-width: 1024px)': {
+
+  },
 });
 
 export const ContainerResponsivo3 = styled.div({
   width: "100%",
   alignItems:"center",
   justifyContent: "center", 
+  '@media only screen and (max-width: 780px)': {
+
+  },
+  '@media only screen and (min-width: 781px) and (max-width: 1024px)': {
+
+  },
 });
 
 export const InputN = styled.div({
@@ -279,7 +253,13 @@ export const InputN = styled.div({
   height: "15%",
   margin: "10px",
   padding: "2px",
-  borderBottom: "1px solid blue",
+  borderBottom: "1px solid #29abe2",
+  '@media only screen and (max-width: 780px)': {
+
+  },
+  '@media only screen and (min-width: 781px) and (max-width: 1024px)': {
+
+  },
   
 
 })
@@ -294,6 +274,12 @@ export const ContainerCadastrados = styled.div({
   margin: "0 auto",
   padding: "20px", 
   overflow: "auto ",
+  '@media only screen and (max-width: 780px)': {
+
+  },
+  '@media only screen and (min-width: 781px) and (max-width: 1024px)': {
+
+  },
 });
 
 export const CadastroItem = styled.div`
@@ -318,11 +304,23 @@ export const Button = styled.button({
  width:"50px",
  height: "50px",
  border: "none",
+ '@media only screen and (max-width: 780px)': {
+
+ },
+ '@media only screen and (min-width: 781px) and (max-width: 1024px)': {
+
+ },
 });
 
 export const ButtonContainer = styled.div({
   position: "fixed",
-  background: "red"
+  background: "red",
+  '@media only screen and (max-width: 780px)': {
+
+  },
+  '@media only screen and (min-width: 781px) and (max-width: 1024px)': {
+
+  },
 });
 
 export const ContainerTopo = styled.div({
@@ -331,6 +329,12 @@ export const ContainerTopo = styled.div({
   alignItems: 'flex-end', 
   height: "10%",
   width: "80%",
+  '@media only screen and (max-width: 780px)': {
+
+  },
+  '@media only screen and (min-width: 781px) and (max-width: 1024px)': {
+
+  },
 });
 
 export const StyledTable = styled.table`

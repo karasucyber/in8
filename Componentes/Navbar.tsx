@@ -2,70 +2,80 @@ import React, { useState } from 'react';
 import styled from 'styled-components';
 import { FaBars } from 'react-icons/fa'; 
 import { useMediaQuery } from "@react-hook/media-query";
+const NavbarContainer = styled.nav({
+  color: '#fff',
+  padding: '20px',
+  width: '50%',
+  height: '10px',
+});
 
-const NavbarContainer = styled.nav`
-  color: #fff;
-  padding: 20px;
-  width: 50%;
-  height: 10px;
-`;
+const NavbarContent = styled.div({
+  display: 'flex',
+  justifyContent: 'space-between',
+  alignItems: 'center',
+});
 
-const NavbarContent = styled.div`
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-`;
+const NavbarTitle = styled.div({
+  background: 'url(logo-in8-dev.svg)',
+  width: '171px',
+  height: '40px',
+  backgroundPosition: "center",
+  backgroundRepeat: "no-repeat",
+  backgroundSize: "cover",
+});
 
-const NavbarTitle = styled.div`
-  background: url(logo-in8-dev.svg);
-  width: 171px;
-  height: 40px;
-`;
+const NavbarHambu1 = styled.div({
+  background: 'url(hamburguer-aberto0.svg)',
+  width: '30px',
+  height: '25px',
+  backgroundPosition: "center",
+  backgroundRepeat: "no-repeat",
+  backgroundSize: "cover",
 
+});
 
-const NavbarHambu1 = styled.div`
-  background: url(hamburguer-aberto0.svg);
-  width: 30px;
-  height: 25px;
-`;
-const NavbarHambu2 = styled.div`
-  background: url(hamburguer.svg);
-  width: 30px;
-  height: 25px;
-`;
+const NavbarHambu2 = styled.div({
+  background: 'url(hamburguer.svg)',
+  width: '30px',
+  height: '25px',
+  backgroundPosition: "center",
+    backgroundRepeat: "no-repeat",
+    backgroundSize: "cover",
+});
 
-const NavbarMenu = styled.ul`
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  align-items: center;
-  @media (max-width: 768px) {
-    display: none;
-  }
-`;
+const NavbarMenu = styled.ul({
+  listStyleType: 'none',
+  margin: '0',
+  padding: '0',
+  display: 'flex',
+  alignItems: 'center',
+  '@media only screen and (max-width: 780px)': {
+    display: 'none',
+  },
+});
 
-const NavbarMenuItem = styled.li`
-  margin-right: 20px;
-`;
+const NavbarMenuItem = styled.li({
+  marginRight: '20px',
+});
 
-const NavbarLink = styled.a`
-  color: #fff;
-  text-decoration: none;
-  &:hover {
-    text-decoration: underline;
-  }
-`;
+const NavbarLink = styled.a({
+  color: '#fff',
+  textDecoration: 'none',
+  '&:hover': {
+    textDecoration: 'underline',
+  },
+});
 
-const NavbarToggle = styled.button`
-  background-color: transparent;
-  color: #fff;
-  border: none;
-  cursor: pointer;
-  @media (min-width: 769px) {
-    display: none;
-  }
-`;
+const NavbarToggle = styled.button({
+  backgroundColor: 'transparent',
+  color: '#fff',
+  border: 'none',
+  cursor: 'pointer',
+  '@media (min-width: 769px)': {
+    display: 'none',
+  },
+}); 
+
 
 const DropdownMenu = styled.div<{ isOpen: boolean }>`
   display: ${({ isOpen }) => (isOpen ? 'block' : 'none')};
