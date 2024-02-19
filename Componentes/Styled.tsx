@@ -127,29 +127,27 @@ export const containerFormsG= styled.div({
   height: "500px",
 
 })
-
 export const ContainerForm = styled.div({
   display: "flex",
   flexDirection: "column",
   justifyContent: "center",
-  alignItems: "flex-start",
   gap: "10px",
   height: "400px",
   '@media only screen and (max-width: 780px)': {
-   width: "100%"
+    width: "90%",
+    alignItems: "center",
   },
   '@media only screen and (min-width: 781px) and (max-width: 1024px)': {
-    width: "100%"
+    width: "90%",
+    alignItems: "center",
   },
 });
 
 export const Label = styled.label({
+  display: "flex",
   color: "white",
   fontSize: "12px",
   width: "100%",
-
-
-
 });
 
 export const Input = styled.input({
@@ -159,12 +157,10 @@ export const Input = styled.input({
   color: "white",
   borderBottom: "1px solid ",
   '@media only screen and (max-width: 780px)': {
-    width: "80%",
-
+    width: "100%",
   },
   '@media only screen and (min-width: 781px) and (max-width: 1024px)': {
     width: "80%",
-
   },
 });
 
@@ -172,22 +168,18 @@ export const ContainerButton = styled.div({
   display: "flex",
   justifyContent: "center",
   '@media only screen and (max-width: 780px)': {
-    width: "80%",
-
-
+    width: "100%",
   },
   '@media only screen and (min-width: 781px) and (max-width: 1024px)': {
-    width: "100%",
-
-
+    width: "90%",
   },
 });
 
 export const ButtonCadastro = styled.button`
   ${({ theme }) => FontFace};
-  width: 400px;
+  width: 100%;
   height: 80px;
-  font-size: 55px;
+  font-size: 45px;
   background: #012d51;
   color: #29abe2;
   font-family: 'Helvetica 25 UltraLight Regular', Arial, sans-serif;

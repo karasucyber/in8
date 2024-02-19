@@ -59,7 +59,6 @@ export const Parte2 = (props: Props) => {
         <ContainerButton>
         <ButtonCadastro type="submit" value="add">CADASTRAR</ButtonCadastro>
         </ContainerButton>
-  
       </form>
 </Container2>
     </Container2>
