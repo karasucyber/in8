@@ -28,6 +28,6 @@ npm run dev
 Open [http://localhost:3000](http://localhost:3000) in your browser to see the result.
 
 
-Eu não entendi muito bem a funcionalidade no icon então criei o delete oculto.
+Eu não entendi muito bem a funcionalidade do icon então criei o delete oculto.
 
 ![Captura de tela de 2024-02-19 13-58-05](https://github.com/karasucyber/in8/assets/115439232/121013d2-afc4-482e-967b-acbe6daef587)
