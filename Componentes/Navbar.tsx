@@ -7,6 +7,17 @@ const NavbarContainer = styled.nav({
   padding: '20px',
   width: '50%',
   height: '10px',
+  '@media only screen and (max-width: 780px)': {
+    width: '80%',
+
+
+  },
+  '@media only screen and (min-width: 781px) and (max-width: 1024px)': {
+    width: '80%',
+
+  
+  },
+  
 });
 
 const NavbarContent = styled.div({
@@ -80,27 +91,25 @@ const NavbarToggle = styled.button({
 const DropdownMenu = styled.div<{ isOpen: boolean }>`
   display: ${({ isOpen }) => (isOpen ? 'block' : 'none')};
   margin-bottom: 10px;
-  width: 2000px;
-  height: 50px;
   position: absolute;
   top: 0;
   left: 0;
-  background-color: #333;
+  background-color: #29abe2;
   padding: 10px;
   width: 30%;
   height: 30%;
+  padding: 10px
 
 `;
 
 const DropdownMenuItem = styled.div`
   margin-bottom: 10px;
-  width: 2000px;
   height: 50px
 `;
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
-  const isMobileDevice = useMediaQuery("(max-width: 1000px)");
+  const isMobileDevice = useMediaQuery("(max-width: 1200px)");
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);

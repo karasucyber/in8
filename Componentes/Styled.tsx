@@ -31,17 +31,17 @@ export const Container1 = styled.div({
   width: "100%",
   height: "940px",
   backgroundImage: `url('/index-image.jpg')`,
-  margin: "0px", 
-  padding: "0px", 
+  margin: "0px",
+  padding: "0px",
   '@media only screen and (max-width: 780px)': {
-    height: '640px', 
+    height: '640px',
     backgroundImage: `url('/index-image-mobile.jpg')`,
     backgroundPosition: "center",
     backgroundRepeat: "no-repeat",
     backgroundSize: "cover",
   },
   '@media only screen and (min-width: 781px) and (max-width: 1024px)': {
-    height: '740px', 
+    height: '740px',
     backgroundPosition: "center",
     backgroundRepeat: "no-repeat",
     backgroundSize: "cover",
@@ -49,7 +49,7 @@ export const Container1 = styled.div({
 });
 
 export const ContainerTexto1 = styled.div`
-  ${(theme)=> FontFace }
+  ${(theme) => FontFace}
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -74,7 +74,7 @@ export const ContainerTexto1 = styled.div`
 `;
 
 export const ContainerSubTexto1 = styled.div({
-  width:"50 %",
+  width: "50 %",
   height: "0%",
   '@media only screen and (max-width: 780px)': {
 
@@ -82,13 +82,13 @@ export const ContainerSubTexto1 = styled.div({
   '@media only screen and (min-width: 781px) and (max-width: 1024px)': {
 
   },
-}) 
+})
 
 
 export const FraseEfeito = styled.h1(({ theme }) => ({
   fontSize: '100px',
   color: "white",
-  fontWeight: 1, 
+  fontWeight: 1,
   '@media only screen and (max-width: 780px)': {
     fontSize: "70px"
   },
@@ -96,7 +96,7 @@ export const FraseEfeito = styled.h1(({ theme }) => ({
 
 export const SubFraseEfeito = styled.h1({
   fontSize: '50px',
-  fontWeight: '100', 
+  fontWeight: '100',
   color: "white",
   '@media only screen and (max-width: 780px)': {
     fontSize: "30px"
@@ -111,8 +111,8 @@ export const Container2 = styled.div({
   width: "100%",
   height: "700px",/* Mesma altura que a imagem possui */
   background: "#29abe2", /*Fundo proposto*/
-  margin: "0px", 
-  padding: "0px", 
+  margin: "0px",
+  padding: "0px",
   '@media only screen and (max-width: 780px)': {
 
   },
@@ -124,22 +124,23 @@ export const Container2 = styled.div({
 export const ContainerForm = styled.div({
   display: "flex",
   flexDirection: "column",
-  justifyContent: "center", 
-  alignItems: "flex-start", 
+  justifyContent: "center",
+  alignItems: "flex-start",
   gap: "10px",
-    height: "400px",
-    '@media only screen and (max-width: 780px)': {
-
-    },
-    '@media only screen and (min-width: 781px) and (max-width: 1024px)': {
-  
-    },
+  height: "400px",
+  '@media only screen and (max-width: 780px)': {
+   width: "100%"
+  },
+  '@media only screen and (min-width: 781px) and (max-width: 1024px)': {
+    width: "100%"
+  },
 });
 
 export const Label = styled.label({
   color: "white",
-  fontSize: "10px"
-  
+  fontSize: "10px",
+
+
 });
 
 export const Input = styled.input({
@@ -147,7 +148,7 @@ export const Input = styled.input({
   background: "#29abe2",
   border: "none",
   color: "white",
-  borderBottom: "1px solid ", 
+  borderBottom: "1px solid ",
   '@media only screen and (max-width: 780px)': {
 
   },
@@ -158,7 +159,7 @@ export const Input = styled.input({
 
 export const ContainerButton = styled.div({
   display: "flex",
-  justifyContent: "center", 
+  justifyContent: "center",
   '@media only screen and (max-width: 780px)': {
 
   },
@@ -178,7 +179,7 @@ export const ButtonCadastro = styled.button`
 `;
 
 export const Titulo2 = styled.h1`
-  ${({theme}) => FontFace};
+  ${({ theme }) => FontFace};
   font-size: 50px;
   font-family: 'Helvetica 25 UltraLight Regular', Arial, sans-serif;
   font-weight: 100;
@@ -194,8 +195,8 @@ export const Container3 = styled.div({
   width: "100%",
   height: "700px",
   background: "",
-  margin: "0px", 
-  padding: "0px", 
+  margin: "0px",
+  padding: "0px",
   '@media only screen and (max-width: 780px)': {
     height: "400px",
 
@@ -215,7 +216,7 @@ export const ContainerResponsivo1 = styled.div({
   width: "100%",
   height: "100%",
   display: "flex",
-  justifyContent: "center", 
+  justifyContent: "center",
   '@media only screen and (max-width: 780px)': {
 
   },
@@ -224,10 +225,10 @@ export const ContainerResponsivo1 = styled.div({
   },
 });
 
-export const ContainerResponsivo2= styled.div({
+export const ContainerResponsivo2 = styled.div({
   width: "100%",
   margin: "auto", // Centralizando horizontalmente
-  justifyContent: "flex-start", 
+  justifyContent: "flex-start",
   '@media only screen and (max-width: 780px)': {
 
   },
@@ -238,8 +239,8 @@ export const ContainerResponsivo2= styled.div({
 
 export const ContainerResponsivo3 = styled.div({
   width: "100%",
-  alignItems:"center",
-  justifyContent: "center", 
+  alignItems: "center",
+  justifyContent: "center",
   '@media only screen and (max-width: 780px)': {
 
   },
@@ -249,7 +250,7 @@ export const ContainerResponsivo3 = styled.div({
 });
 
 export const InputN = styled.div({
-  width:"90%",
+  width: "90%",
   height: "15%",
   margin: "10px",
   padding: "2px",
@@ -260,19 +261,19 @@ export const InputN = styled.div({
   '@media only screen and (min-width: 781px) and (max-width: 1024px)': {
 
   },
-  
+
 
 })
 
 
 export const ContainerCadastrados = styled.div({
   display: "flex",
-  justifyContent: "center",  
+  justifyContent: "center",
   width: "90%",
   maxWidth: "800px",
   maxHeight: "400px",
   margin: "0 auto",
-  padding: "20px", 
+  padding: "20px",
   overflow: "auto ",
   '@media only screen and (max-width: 780px)': {
 
@@ -299,17 +300,17 @@ export const Buttons = styled.div<{ visible: boolean }>`
 `;
 
 export const Button = styled.button({
- background: "url(topo-pag.svg)",
- borderRadius: "50px",
- width:"50px",
- height: "50px",
- border: "none",
- '@media only screen and (max-width: 780px)': {
+  background: "url(topo-pag.svg)",
+  borderRadius: "50px",
+  width: "50px",
+  height: "50px",
+  border: "none",
+  '@media only screen and (max-width: 780px)': {
 
- },
- '@media only screen and (min-width: 781px) and (max-width: 1024px)': {
+  },
+  '@media only screen and (min-width: 781px) and (max-width: 1024px)': {
 
- },
+  },
 });
 
 export const ButtonContainer = styled.div({
@@ -326,7 +327,7 @@ export const ButtonContainer = styled.div({
 export const ContainerTopo = styled.div({
   display: 'flex',
   justifyContent: 'flex-end',
-  alignItems: 'flex-end', 
+  alignItems: 'flex-end',
   height: "10%",
   width: "80%",
   '@media only screen and (max-width: 780px)': {
@@ -371,34 +372,34 @@ export const StyledTable = styled.table`
 /*Footer*/
 
 export const ContainerFoooter = styled.div({
-    display: "flex",
-    justifyContent: "center",
-    alignItems: "center",
-    width: "100%",
-    height: "334px", /* Mesma altura que a imagem possui */
-    backgroundImage: `url('/rodape-desktop.jpg')`,
-    margin: "0px", 
-    padding: "0px", 
-    flexDirection: "column",
-    color: "white",
-    '@media only screen and (max-width: 780px)': {
-        height: '334px', // Ajuste a altura para dispositivos móveis
-        backgroundImage: `url('/rodape-mobile.jpg')`,
-        backgroundPosition: "center",
-        backgroundRepeat: "no-repeat",
-        backgroundSize: "cover",
-    },
+  display: "flex",
+  justifyContent: "center",
+  alignItems: "center",
+  width: "100%",
+  height: "334px", /* Mesma altura que a imagem possui */
+  backgroundImage: `url('/rodape-desktop.jpg')`,
+  margin: "0px",
+  padding: "0px",
+  flexDirection: "column",
+  color: "white",
+  '@media only screen and (max-width: 780px)': {
+    height: '334px', // Ajuste a altura para dispositivos móveis
+    backgroundImage: `url('/rodape-mobile.jpg')`,
+    backgroundPosition: "center",
+    backgroundRepeat: "no-repeat",
+    backgroundSize: "cover",
+  },
 
-    '@media only screen and (min-width: 781px) and (max-width: 1024px)': {
-        height: '334px', // Ajuste a altura para tablets
+  '@media only screen and (min-width: 781px) and (max-width: 1024px)': {
+    height: '334px', // Ajuste a altura para tablets
 
-    },
+  },
 })
 
 
 /*Geral*/
 export const ContainerTitulo = styled.div({
- display: "flex",
-    justifyContent: "center",  
-    width: "100%",
+  display: "flex",
+  justifyContent: "center",
+  width: "100%",
 })
