@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import styled from 'styled-components';
 import { FaBars } from 'react-icons/fa'; 
 import { useMediaQuery } from "@react-hook/media-query";
+import { TbPointFilled } from "react-icons/tb";
+
 const NavbarContainer = styled.nav({
   color: '#fff',
   padding: '20px',
@@ -143,11 +145,13 @@ const Navbar = () => {
         <NavbarMenu>
       
           <NavbarMenuItem>
-            <NavbarLink href="#">cadastro</NavbarLink>
+  <NavbarLink href="#">cadastro</NavbarLink>  
           </NavbarMenuItem>
+          <TbPointFilled style={{ width: "10px"}} />
           <NavbarMenuItem>
             <NavbarLink href="#">lista</NavbarLink>
           </NavbarMenuItem>
+          <TbPointFilled style={{ width: "10px"}} />
           <NavbarMenuItem>
             <NavbarLink href="#">sobre mim</NavbarLink>
           </NavbarMenuItem>
