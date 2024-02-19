@@ -152,9 +152,11 @@ export const Input = styled.input({
   color: "white",
   borderBottom: "1px solid ",
   '@media only screen and (max-width: 780px)': {
+    width: "80%",
 
   },
   '@media only screen and (min-width: 781px) and (max-width: 1024px)': {
+    width: "80%",
 
   },
 });
