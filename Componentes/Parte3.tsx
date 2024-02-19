@@ -6,6 +6,9 @@ import {
 import { TypeCadastro } from "./CRUD/TypeCadastro";
 import React, { useState } from "react";
 import { dummyCadastrolist } from "./CRUD/TypeCadastro";
+import { Tab, TabList, TabPanel, Tabs } from "react-tabs";
+import "react-tabs/style/react-tabs.css"; // Importando o estilo básico das abas
+import { useMediaQuery } from "@react-hook/media-query";
 
 type Props = {
   list: TypeCadastro[]
@@ -20,12 +23,58 @@ const Parte3 = (props: Props) => {
   const toggleAllButtons = () => {
     setButtonsVisible(!buttonsVisible);
   };
+
+  const isMobileDevice = useMediaQuery("(max-width: 768px)");
+
   return (
-    <>
-      <Container3>
-        <ContainerTitulo>
-          <h1> Lista de Cadastro </h1>
-        </ContainerTitulo>
+    <Container3>
+      <h1>Lista de Cadastro</h1>
+      {isMobileDevice ? (
+        <Tabs>
+          <TabList>
+            <Tab>Cadastros</Tab>
+          </TabList>
+          <TabPanel>
+            <table>
+              <thead>
+                <tr>
+                  <th>Posição</th>
+                  <th>Nome</th>
+                  <th>Email</th>
+                  <th>Nascimento</th>
+                  <th>Telefone</th>
+                  <th></th>
+                </tr>
+              </thead>
+              <tbody>
+                {list.map((cadastro, index) => (
+                  <tr key={cadastro.id}>
+                    <td>{index + 1}</td>
+                    <td>{cadastro.nome}</td>
+                    <td>{cadastro.email}</td>
+                    <td>{cadastro.dataNascimento}</td>
+                    <td>{cadastro.telefone}</td>
+                    <td>
+                      <div>
+                        <button onClick={toggleAllButtons}></button>
+                        {dummyCadastrolist.map((cadastro, index) => (
+                          <div key={cadastro.id}>
+                            <span onClick={toggleButtons}>Icon</span>
+                            <div style={{ display: buttonsVisible ? "block" : "none" }}>
+                              <input type="button" value="Delete" onClick={() => onDeleteClick(cadastro)} />
+                            </div>
+                          </div>
+                        ))}
+                      </div>
+                    </td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </TabPanel>
+        </Tabs>
+      ) : (
+        <Container3>
         <ContainerCadastrados>
           <StyledTable>
             <thead>
@@ -71,10 +120,10 @@ const Parte3 = (props: Props) => {
           <Button onClick={toggleAllButtons} />
         </ContainerTopo>
       </Container3>
-    </>
-  );
-}
-
+      )}
+</Container3>  
+);
+};
 export default Parte3;
 
 

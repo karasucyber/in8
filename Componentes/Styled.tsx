@@ -162,7 +162,7 @@ export const ContainerForm = styled.div({
   justifyContent: "center", 
   alignItems: "flex-start", 
   gap: "10px",
-  height: "400px",
+    height: "400px",
 });
 
 export const Label = styled.label({
@@ -171,7 +171,7 @@ export const Label = styled.label({
 });
 
 export const Input = styled.input({
-  width: "500px",
+  width: "400px",
   background: "#29abe2",
   border: "none",
   color: "white",
@@ -217,7 +217,7 @@ export const Container3 = styled.div({
 export const ContainerCadastrados = styled.div({
   display: "flex",
   justifyContent: "center",  
-  width: "100%",
+  width: "90%",
   maxWidth: "800px",
   maxHeight: "400px",
   margin: "0 auto",
