@@ -39,7 +39,7 @@ const Parte3 = (props: Props) => {
  <Tabs style={{}}>
  <ContainerResponsivo3>
 <ContainerResponsivo2>
-                 <TabList style={{width: "400px"}}>
+                 <TabList style={{width: "350px"}}>
               {list.map((cadastro, index) => (
                 <Tab style={{borderRadius: 0}} key={index}>{index + 1}</Tab>
               ))}

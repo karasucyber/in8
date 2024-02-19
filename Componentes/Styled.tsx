@@ -225,9 +225,11 @@ export const ContainerResponsivo1 = styled.div({
   display: "flex",
   justifyContent: "center",
   '@media only screen and (max-width: 780px)': {
+    width: "100%",
 
   },
   '@media only screen and (min-width: 781px) and (max-width: 1024px)': {
+    width: "90%",
 
   },
 });
@@ -237,9 +239,11 @@ export const ContainerResponsivo2 = styled.div({
   margin: "auto", // Centralizando horizontalmente
   justifyContent: "flex-start",
   '@media only screen and (max-width: 780px)': {
+    width: "90%",
 
   },
   '@media only screen and (min-width: 781px) and (max-width: 1024px)': {
+    width: "100%",
 
   },
 });
@@ -249,6 +253,7 @@ export const ContainerResponsivo3 = styled.div({
   alignItems: "center",
   justifyContent: "center",
   '@media only screen and (max-width: 780px)': {
+    width: "90%",
 
   },
   '@media only screen and (min-width: 781px) and (max-width: 1024px)': {
