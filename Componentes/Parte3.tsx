@@ -29,49 +29,38 @@ const Parte3 = (props: Props) => {
   return (
     <div>
       {isMobileDevice ? (
-        <Tabs>
-          <TabList>
-            <Tab>Cadastros</Tab>
-          </TabList>
-          <TabPanel>
-            <table>
-              <thead>
-                <tr>
-                  <th>Posição</th>
-                  <th>Nome</th>
-                  <th>Email</th>
-                  <th>Nascimento</th>
-                  <th>Telefone</th>
-                  <th></th>
-                </tr>
-              </thead>
-              <tbody>
-                {list.map((cadastro, index) => (
-                  <tr key={cadastro.id}>
-                    <td>{index + 1}</td>
-                    <td>{cadastro.nome}</td>
-                    <td>{cadastro.email}</td>
-                    <td>{cadastro.dataNascimento}</td>
-                    <td>{cadastro.telefone}</td>
-                    <td>
-                      <div>
-                        <button onClick={toggleAllButtons}></button>
-                        {dummyCadastrolist.map((cadastro, index) => (
-                          <div key={cadastro.id}>
-                            <span onClick={toggleButtons}>Icon</span>
-                            <div style={{ display: buttonsVisible ? "block" : "none" }}>
-                              <input type="button" value="Delete" onClick={() => onDeleteClick(cadastro)} />
-                            </div>
-                          </div>
-                        ))}
-                      </div>
-                    </td>
-                  </tr>
-                ))}
-              </tbody>
-            </table>
-          </TabPanel>
-        </Tabs>
+            <Tabs>
+                 <TabList>
+              {list.map((cadastro, index) => (
+                <Tab key={index}>{index + 1}</Tab>
+              ))}
+            </TabList>
+            {list.map((cadastro, index) => (
+              <TabPanel key={index}>
+                <table>
+                  <thead>
+                    <tr>
+                      <th>Nome</th>
+                      <th>Email</th>
+                      <th>Nascimento</th>
+                      <th>Telefone</th>
+                      <th></th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>{cadastro.nome}</td>
+                      <td>{cadastro.email}</td>
+                      <td>{cadastro.dataNascimento}</td>
+                      <td>{cadastro.telefone}</td>
+                      <td>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </TabPanel>
+            ))}
+          </Tabs>
       ) : (
         <Container3>
         <ContainerTitulo>
