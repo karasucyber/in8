@@ -4,7 +4,7 @@ import { PageEnum, TypeCadastro, dummyCadastrolist } from '@/Componentes/CRUD/Ty
 import Footer from '@/Componentes/Footer';
 import Parte1 from '@/Componentes/Parte1';
 import Parte2 from '@/Componentes/Parte2';
-import Parte3 from '@/Componentes/Parte3';
+import Parte3 from '@/Componentes/Parte3/Parte3';
 import React, { useState } from 'react';
 import styled from 'styled-components';
 

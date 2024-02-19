@@ -214,6 +214,37 @@ export const Container3 = styled.div({
   padding: "0px", 
 });
 
+
+
+export const ContainerResponsivo1 = styled.div({
+  width: "100%",
+  height: "100%",
+  display: "flex",
+  justifyContent: "center", 
+});
+
+export const ContainerResponsivo2= styled.div({
+  width: "80%",
+  margin: "auto", // Centralizando horizontalmente
+  justifyContent: "flex-start", 
+});
+
+export const ContainerResponsivo3 = styled.div({
+  width: "100%",
+  alignItems:"center",
+  justifyContent: "center", 
+});
+
+export const InputN = styled.div({
+  width:"90%",
+  height: "15%",
+  margin: "10px",
+  padding: "2px",
+  borderBottom: "1px solid blue",
+
+})
+
+
 export const ContainerCadastrados = styled.div({
   display: "flex",
   justifyContent: "center",  

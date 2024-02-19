@@ -1,14 +1,15 @@
 import {
   Container3, ContainerCadastrados,
   ContainerTitulo,
-  StyledTable, ButtonContainer, CadastroItem, Icon, Buttons, ContainerTopo, Button
-} from "./Styled";
-import { TypeCadastro } from "./CRUD/TypeCadastro";
+  StyledTable, ButtonContainer, CadastroItem, Icon, Buttons, ContainerTopo, Button, ContainerResponsivo1, ContainerResponsivo2, ContainerResponsivo3, InputN
+} from "../Styled";
+import { TypeCadastro } from "../CRUD/TypeCadastro";
 import React, { useState } from "react";
-import { dummyCadastrolist } from "./CRUD/TypeCadastro";
+import { dummyCadastrolist } from "../CRUD/TypeCadastro";
 import { Tab, TabList, TabPanel, Tabs } from "react-tabs";
 import "react-tabs/style/react-tabs.css"; // Importando o estilo básico das abas
 import { useMediaQuery } from "@react-hook/media-query";
+
 
 type Props = {
   list: TypeCadastro[]
@@ -29,38 +30,37 @@ const Parte3 = (props: Props) => {
   return (
     <div>
       {isMobileDevice ? (
-            <Tabs>
+        <Container3>
+            <ContainerTitulo>
+          <h1> Lista de Cadastro</h1>
+     
+        </ContainerTitulo>
+ <ContainerResponsivo1>
+ <Tabs style={{}}>
+ <ContainerResponsivo3>
+<ContainerResponsivo2>
                  <TabList>
               {list.map((cadastro, index) => (
-                <Tab key={index}>{index + 1}</Tab>
+                <Tab style={{borderRadius: 0}} key={index}>{index + 1}</Tab>
               ))}
             </TabList>
+            </ContainerResponsivo2>
+</ContainerResponsivo3>
             {list.map((cadastro, index) => (
-              <TabPanel key={index}>
-                <table>
-                  <thead>
-                    <tr>
-                      <th>Nome</th>
-                      <th>Email</th>
-                      <th>Nascimento</th>
-                      <th>Telefone</th>
-                      <th></th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <td>{cadastro.nome}</td>
-                      <td>{cadastro.email}</td>
-                      <td>{cadastro.dataNascimento}</td>
-                      <td>{cadastro.telefone}</td>
-                      <td>
-                      </td>
-                    </tr>
-                  </tbody>
-                </table>
-              </TabPanel>
-            ))}
+<ContainerResponsivo3>
+<ContainerResponsivo2>
+               <TabPanel style={{border: "2px solid black", height: "200px", alignItems: "center", justifyItems: "center"}} key={index}>
+                <InputN> <a>NOME</a> : <a>{cadastro.nome}</a></InputN>
+                <InputN> <a>E-Mail</a> : <a>{cadastro.nome}</a></InputN>
+                <InputN> <a>NASC</a> : <a>{cadastro.nome}</a></InputN>
+                <InputN> <a>TEL</a>: <a>{cadastro.nome}</a></InputN>
+              </TabPanel> 
+     </ContainerResponsivo2>
+</ContainerResponsivo3>))}
           </Tabs>
+ </ContainerResponsivo1>
+        </Container3>
+            
       ) : (
         <Container3>
         <ContainerTitulo>
