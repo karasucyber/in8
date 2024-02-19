@@ -108,7 +108,9 @@ const DropdownMenuItem = styled.div`
   margin-bottom: 10px;
   height: 50px
 `;
-
+const Containericons = styled.div`
+ width: 30px;
+`;
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const isMobileDevice = useMediaQuery("(max-width: 1024px)");
@@ -147,11 +149,15 @@ const Navbar = () => {
           <NavbarMenuItem>
   <NavbarLink href="#">cadastro</NavbarLink>  
           </NavbarMenuItem>
-          <TbPointFilled style={{ width: "10px"}} />
+          <Containericons>
+          <TbPointFilled style={{ width: "20px"}} />
+          </Containericons>
           <NavbarMenuItem>
             <NavbarLink href="#">lista</NavbarLink>
           </NavbarMenuItem>
-          <TbPointFilled style={{ width: "10px"}} />
+          <Containericons>
+          <TbPointFilled style={{ width: "20px"}} />
+          </Containericons>
           <NavbarMenuItem>
             <NavbarLink href="#">sobre mim</NavbarLink>
           </NavbarMenuItem>
