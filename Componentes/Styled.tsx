@@ -138,13 +138,15 @@ export const ContainerForm = styled.div({
 
 export const Label = styled.label({
   color: "white",
-  fontSize: "10px",
+  fontSize: "12px",
+  width: "100%",
+
 
 
 });
 
 export const Input = styled.input({
-  width: "400px",
+  width: "100%",
   background: "#29abe2",
   border: "none",
   color: "white",
@@ -161,9 +163,13 @@ export const ContainerButton = styled.div({
   display: "flex",
   justifyContent: "center",
   '@media only screen and (max-width: 780px)': {
+    width: "100%",
+
 
   },
   '@media only screen and (min-width: 781px) and (max-width: 1024px)': {
+    width: "100%",
+
 
   },
 });

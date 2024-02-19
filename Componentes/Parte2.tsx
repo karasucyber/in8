@@ -2,6 +2,9 @@ import React, { useState } from "react";
 import { Container2, ContainerForm, Label, Input,ButtonCadastro, Titulo2, ContainerButton } from "./Styled";
 import { TypeCadastro } from "./CRUD/TypeCadastro";
 
+
+
+
 type Props = {
   onSumit: (data: TypeCadastro) => void;
 }
