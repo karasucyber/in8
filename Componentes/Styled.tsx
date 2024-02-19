@@ -121,6 +121,13 @@ export const Container2 = styled.div({
   },
 });
 
+
+export const containerFormsG= styled.div({
+  width: "100%",
+  height: "500px",
+
+})
+
 export const ContainerForm = styled.div({
   display: "flex",
   flexDirection: "column",
@@ -165,7 +172,7 @@ export const ContainerButton = styled.div({
   display: "flex",
   justifyContent: "center",
   '@media only screen and (max-width: 780px)': {
-    width: "100%",
+    width: "80%",
 
 
   },

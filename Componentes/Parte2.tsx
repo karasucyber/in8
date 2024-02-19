@@ -5,6 +5,7 @@ import { TypeCadastro } from "./CRUD/TypeCadastro";
 
 
 
+
 type Props = {
   onSumit: (data: TypeCadastro) => void;
 }
@@ -43,7 +44,8 @@ export const Parte2 = (props: Props) => {
   return (
     <Container2>
               <Titulo2>CADASTRO </Titulo2>
-      <form onSubmit={onSumitBTN}>
+<Container2>
+<form onSubmit={onSumitBTN}>
         <ContainerForm>
         <Label>Nome </Label>
           <Input type="text" value={nome} onChange={NameChange}></Input>
@@ -59,6 +61,7 @@ export const Parte2 = (props: Props) => {
         </ContainerButton>
   
       </form>
+</Container2>
     </Container2>
   )
 }
