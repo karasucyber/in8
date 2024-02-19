@@ -50,9 +50,9 @@ const Parte3 = (props: Props) => {
 <ContainerResponsivo2>
                <TabPanel style={{border: "2px solid#29abe2 ", height: "200px", alignItems: "center", justifyItems: "center", width: "100%",}} key={index}>
                 <InputN> <a>NOME</a> : <a>{cadastro.nome}</a></InputN>
-                <InputN> <a>E-Mail</a> : <a>{cadastro.nome}</a></InputN>
-                <InputN> <a>NASC</a> : <a>{cadastro.nome}</a></InputN>
-                <InputN> <a>TEL</a>: <a>{cadastro.nome}</a></InputN>
+                <InputN> <a>E-Mail</a> : <a>{cadastro.email}</a></InputN>
+                <InputN> <a>NASC</a> : <a>{cadastro.dataNascimento}</a></InputN>
+                <InputN> <a>TEL</a>: <a>{cadastro.telefone}</a></InputN>
               </TabPanel> 
      </ContainerResponsivo2>
 ))}
