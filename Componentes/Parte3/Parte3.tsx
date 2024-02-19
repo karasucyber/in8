@@ -48,7 +48,7 @@ const Parte3 = (props: Props) => {
 </ContainerResponsivo3>
             {list.map((cadastro, index) => (
 <ContainerResponsivo2>
-               <TabPanel style={{border: "2px solid #29abe2 ", height: "200px", alignItems: "center", justifyItems: "center", width: "400px", maxHeight: ""}} key={index}>
+               <TabPanel style={{border: "2px solid#29abe2 ", height: "200px", alignItems: "center", justifyItems: "center", width: "100%",}} key={index}>
                 <InputN> <a>NOME</a> : <a>{cadastro.nome}</a></InputN>
                 <InputN> <a>E-Mail</a> : <a>{cadastro.nome}</a></InputN>
                 <InputN> <a>NASC</a> : <a>{cadastro.nome}</a></InputN>
