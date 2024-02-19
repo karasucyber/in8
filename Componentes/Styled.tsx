@@ -24,51 +24,90 @@ const FontFace = css`
 `;
 
 /* Navbar */
-export const NavbarContainer = styled.nav({
-  color: '#fff',
-  padding: '20px',
-  width: "50%",
-});
 
-export const NavbarContent = styled.div({
-  display: 'flex',
-  justifyContent: 'space-between',
-  alignItems: 'center',
-});
+export const NavbarContainer = styled.nav`
+  color: #fff;
+  padding: 20px;
+  width: 50%;
 
-export const NavbarTitle = styled.div({
-  background: "url(logo-in8-dev.svg)",
-  width: "171px",
-  height: "40px",
-});
+  @media (max-width: 768px) {
+    width: 100%;
+  }
+`;
 
-export const NavbarMenu = styled.ul({
-  listStyleType: 'none',
-  margin: '0',
-  padding: '0',
-  display: 'flex',
-  alignItems: 'center',
-});
+export const NavbarContent = styled.div`
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+`;
 
-export const NavbarMenuItem = styled.li({
-  marginRight: '20px',
-});
+export const NavbarTitle = styled.div`
+  background: url(logo-in8-dev.svg);
+  width: 171px;
+  height: 40px;
+`;
 
-export const NavbarLink = styled.a({
-  color: '#fff',
-  textDecoration: 'none',
-  '&:hover': {
-    textDecoration: 'underline',
-  },
-});
+export const NavbarMenu = styled.ul`
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
 
-export const NavbarToggle = styled.button({
-  display: 'none',
-  backgroundColor: 'transparent',
-  color: '#fff',
-  border: 'none',
-  cursor: 'pointer',
-});
+  @media (max-width: 768px) {
+    display: none;
+  }
+`;
+
+export const NavbarMenuItem = styled.li`
+  margin-right: 20px;
+`;
+
+export const NavbarLink = styled.a`
+  color: #fff;
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
+`;
+
+export const NavbarToggle = styled.button`
+  display: none;
+  background-color: transparent;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+
+  @media (max-width: 768px) {
+    display: block;
+  }
+`;
+
+export const DropdownMenu = styled.div`
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #333;
+  padding: 10px;
+  width: 100%;
+
+  @media (max-width: 768px) {
+  }
+`;
+
+export const DropdownMenuItem = styled.div`
+  margin-bottom: 10px;
+`;
+
+export const MobileMenuIcon = styled.div`
+  display: none;
+
+  @media (max-width: 768px) {
+    display: block;
+  }
+`;
 
 /* Parte 1 */
 export const Container1 = styled.div({
