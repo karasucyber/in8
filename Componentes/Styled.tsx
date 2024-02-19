@@ -224,7 +224,7 @@ export const ContainerResponsivo1 = styled.div({
 });
 
 export const ContainerResponsivo2= styled.div({
-  width: "80%",
+  width: "100%",
   margin: "auto", // Centralizando horizontalmente
   justifyContent: "flex-start", 
 });
@@ -241,6 +241,7 @@ export const InputN = styled.div({
   margin: "10px",
   padding: "2px",
   borderBottom: "1px solid blue",
+  
 
 })
 

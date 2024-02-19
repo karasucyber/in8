@@ -39,7 +39,7 @@ const Parte3 = (props: Props) => {
  <Tabs style={{}}>
  <ContainerResponsivo3>
 <ContainerResponsivo2>
-                 <TabList>
+                 <TabList style={{width: "400px"}}>
               {list.map((cadastro, index) => (
                 <Tab style={{borderRadius: 0}} key={index}>{index + 1}</Tab>
               ))}
@@ -47,16 +47,15 @@ const Parte3 = (props: Props) => {
             </ContainerResponsivo2>
 </ContainerResponsivo3>
             {list.map((cadastro, index) => (
-<ContainerResponsivo3>
 <ContainerResponsivo2>
-               <TabPanel style={{border: "2px solid black", height: "200px", alignItems: "center", justifyItems: "center"}} key={index}>
+               <TabPanel style={{border: "2px solid black", height: "200px", alignItems: "center", justifyItems: "center", width: "400px", maxHeight: ""}} key={index}>
                 <InputN> <a>NOME</a> : <a>{cadastro.nome}</a></InputN>
                 <InputN> <a>E-Mail</a> : <a>{cadastro.nome}</a></InputN>
                 <InputN> <a>NASC</a> : <a>{cadastro.nome}</a></InputN>
                 <InputN> <a>TEL</a>: <a>{cadastro.nome}</a></InputN>
               </TabPanel> 
      </ContainerResponsivo2>
-</ContainerResponsivo3>))}
+))}
           </Tabs>
  </ContainerResponsivo1>
         </Container3>
