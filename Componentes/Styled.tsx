@@ -23,6 +23,8 @@ const FontFace = css`
   }
 `;
 
+
+
 /* Parte 1 */
 export const Container1 = styled.div({
   display: "flex",
@@ -133,6 +135,8 @@ export const ContainerForm = styled.div({
   justifyContent: "center",
   gap: "10px",
   height: "400px",
+  width: "400px",
+
   '@media only screen and (max-width: 780px)': {
     width: "90%",
     alignItems: "center",
@@ -205,7 +209,7 @@ export const Container3 = styled.div({
   margin: "0px",
   padding: "0px",
   '@media only screen and (max-width: 780px)': {
-    height: "400px",
+    height: "550px",
 
 
   },
@@ -217,6 +221,34 @@ export const Container3 = styled.div({
 });
 
 
+export const Th = styled.th`
+  ${({ theme }) => FontFace};
+  font-family: 'HRoboto Regular', Arial, sans-serif;
+  color: #012d51;
+`;
+
+export const Td1 = styled.th`
+  ${({ theme }) => FontFace};
+  font-family: 'Helvetica 25 UltraLight Regular', Arial, sans-serif;
+  color: #012d51;
+`;
+export const Td = styled.th`
+  ${({ theme }) => FontFace};
+  font-family: 'HRoboto Regular', Arial, sans-serif;
+  color: #808080;
+`;
+export const A1 = styled.a`
+  ${({ theme }) => FontFace};
+  font-family: 'HRoboto Regular', Arial, sans-serif;
+  color: #012d51;
+`;
+
+export const A2 = styled.a`
+  ${({ theme }) => FontFace};
+  font-family: 'Helvetica 25 UltraLight Regular', Arial, sans-serif;
+  color: #808080;
+  font-size: 20px;
+`;
 
 
 export const ContainerResponsivo1 = styled.div({

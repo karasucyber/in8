@@ -109,7 +109,7 @@ const DropdownMenuItem = styled.div`
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
-  const isMobileDevice = useMediaQuery("(max-width: 1200px)");
+  const isMobileDevice = useMediaQuery("(max-width: 1024px)");
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);

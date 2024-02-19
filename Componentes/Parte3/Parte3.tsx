@@ -1,7 +1,7 @@
 import {
   Container3, ContainerCadastrados,
   ContainerTitulo,
-  StyledTable, ButtonContainer, CadastroItem, Icon, Buttons, ContainerTopo, Button, ContainerResponsivo1, ContainerResponsivo2, ContainerResponsivo3, InputN
+  StyledTable, ButtonContainer, CadastroItem, Icon, Buttons, ContainerTopo, Button, ContainerResponsivo1, ContainerResponsivo2, ContainerResponsivo3, InputN, Titulo2, Th, Td, Td1, A1,A2
 } from "../Styled";
 import { TypeCadastro } from "../CRUD/TypeCadastro";
 import React, { useState } from "react";
@@ -25,14 +25,14 @@ const Parte3 = (props: Props) => {
     setButtonsVisible(!buttonsVisible);
   };
 
-  const isMobileDevice = useMediaQuery("(max-width: 768px)");
+  const isMobileDevice = useMediaQuery("(max-width: 780px)");
 
   return (
     <div>
       {isMobileDevice ? (
         <Container3>
             <ContainerTitulo>
-          <h1> Lista de Cadastro</h1>
+            <Titulo2 style={{color: "#42ABE2", width: "200px",}}> LISTA DE CADASTRO </Titulo2>
      
         </ContainerTitulo>
  <ContainerResponsivo1>
@@ -41,7 +41,7 @@ const Parte3 = (props: Props) => {
 <ContainerResponsivo2>
                  <TabList style={{width: "350px"}}>
               {list.map((cadastro, index) => (
-                <Tab style={{borderRadius: 0}} key={index}>{index + 1}</Tab>
+                <Tab  style={{borderRadius: 0,padding: "15px"  }} key={index}>{index + 1}</Tab>
               ))}
             </TabList>
             </ContainerResponsivo2>
@@ -49,10 +49,10 @@ const Parte3 = (props: Props) => {
             {list.map((cadastro, index) => (
 <ContainerResponsivo2>
                <TabPanel style={{border: "2px solid#29abe2 ", height: "200px", alignItems: "center", justifyItems: "center", width: "100%",}} key={index}>
-                <InputN> <a>NOME</a> : <a>{cadastro.nome}</a></InputN>
-                <InputN> <a>E-Mail</a> : <a>{cadastro.email}</a></InputN>
-                <InputN> <a>NASC</a> : <a>{cadastro.dataNascimento}</a></InputN>
-                <InputN> <a>TEL</a>: <a>{cadastro.telefone}</a></InputN>
+                <InputN> <A1>NOME</A1> : <A2>{cadastro.nome}</A2></InputN>
+                <InputN> <A1>E-Mail</A1> : <A2>{cadastro.email}</A2></InputN>
+                <InputN> <A1>NASC</A1> : <A2>{cadastro.dataNascimento}</A2></InputN>
+                <InputN> <A1>TEL</A1>: <A2>{cadastro.telefone}</A2></InputN>
               </TabPanel> 
      </ContainerResponsivo2>
 ))}
@@ -63,28 +63,28 @@ const Parte3 = (props: Props) => {
       ) : (
         <Container3>
         <ContainerTitulo>
-          <h1> Lista de Cadastro </h1>
+        <Titulo2 style={{color: "#42ABE2"}}> LISTA DE CADASTRO </Titulo2>
         </ContainerTitulo>
         <ContainerCadastrados>
           <StyledTable>
             <thead>
               <tr>
-                <th>Posição</th>
-                <th>Nome</th>
-                <th>Email</th>
-                <th>Nascimento</th>
-                <th>Telefone</th>
+                <th></th>
+                <Th>Nome </Th>
+                <Th>Email</Th>
+                <Th>Nascimento</Th>
+                <Th>Telefone</Th>
                 <th></th>
               </tr>
             </thead>
             <tbody>
               {list.map((cadastro, index) => (
                 <tr key={cadastro.id}>
-                  <td>{index + 1}</td> {/* Sinalizando a posição na lista */}
-                  <td>{cadastro.nome}</td>
-                  <td>{cadastro.email}</td>
-                  <td>{cadastro.dataNascimento}</td>
-                  <td>{cadastro.telefone}</td>
+                  <Td1 >{index + 1}</Td1> {/* Sinalizando a posição na lista */}
+                  <Td>{cadastro.nome}</Td>
+                  <Td>{cadastro.email}</Td>
+                  <Td>{cadastro.dataNascimento}</Td>
+                  <Td>{cadastro.telefone}</Td>
                   <td>
                     <div>
                       <ButtonContainer>
