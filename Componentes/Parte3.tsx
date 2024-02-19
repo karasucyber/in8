@@ -27,8 +27,7 @@ const Parte3 = (props: Props) => {
   const isMobileDevice = useMediaQuery("(max-width: 768px)");
 
   return (
-    <Container3>
-      <h1>Lista de Cadastro</h1>
+    <div>
       {isMobileDevice ? (
         <Tabs>
           <TabList>
@@ -75,6 +74,9 @@ const Parte3 = (props: Props) => {
         </Tabs>
       ) : (
         <Container3>
+        <ContainerTitulo>
+          <h1> Lista de Cadastro </h1>
+        </ContainerTitulo>
         <ContainerCadastrados>
           <StyledTable>
             <thead>
@@ -121,8 +123,8 @@ const Parte3 = (props: Props) => {
         </ContainerTopo>
       </Container3>
       )}
-</Container3>  
-);
+    </div>
+  );
 };
 export default Parte3;
 
