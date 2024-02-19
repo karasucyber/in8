@@ -1,11 +1,13 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
 import { FaBars } from 'react-icons/fa'; 
+import { useMediaQuery } from "@react-hook/media-query";
 
 const NavbarContainer = styled.nav`
   color: #fff;
   padding: 20px;
   width: 50%;
+  height: 10px;
 `;
 
 const NavbarContent = styled.div`
@@ -20,13 +22,24 @@ const NavbarTitle = styled.div`
   height: 40px;
 `;
 
+
+const NavbarHambu1 = styled.div`
+  background: url(hamburguer-aberto0.svg);
+  width: 30px;
+  height: 25px;
+`;
+const NavbarHambu2 = styled.div`
+  background: url(hamburguer.svg);
+  width: 30px;
+  height: 25px;
+`;
+
 const NavbarMenu = styled.ul`
   list-style-type: none;
   margin: 0;
   padding: 0;
   display: flex;
   align-items: center;
-
   @media (max-width: 768px) {
     display: none;
   }
@@ -39,41 +52,45 @@ const NavbarMenuItem = styled.li`
 const NavbarLink = styled.a`
   color: #fff;
   text-decoration: none;
-
   &:hover {
     text-decoration: underline;
   }
 `;
 
 const NavbarToggle = styled.button`
-  display: none;
   background-color: transparent;
   color: #fff;
   border: none;
   cursor: pointer;
-
-  @media (max-width: 768px) {
-    display: block;
+  @media (min-width: 769px) {
+    display: none;
   }
 `;
 
 const DropdownMenu = styled.div<{ isOpen: boolean }>`
   display: ${({ isOpen }) => (isOpen ? 'block' : 'none')};
+  margin-bottom: 10px;
+  width: 2000px;
+  height: 50px;
   position: absolute;
-  top: 100%;
+  top: 0;
   left: 0;
   background-color: #333;
   padding: 10px;
-  width: 100%;
+  width: 30%;
+  height: 30%;
+
 `;
 
 const DropdownMenuItem = styled.div`
   margin-bottom: 10px;
-  background: blue;
+  width: 2000px;
+  height: 50px
 `;
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const isMobileDevice = useMediaQuery("(max-width: 1000px)");
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
@@ -90,37 +107,47 @@ const Navbar = () => {
   return (
     <NavbarContainer>
       <NavbarContent>
-        <NavbarTitle/>
-        <NavbarToggle onClick={toggleMenu} onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
-          <FaBars />
-        </NavbarToggle>
+        {isMobileDevice ? (
+          <>
+            <NavbarToggle onClick={toggleMenu}>
+             <NavbarHambu2></NavbarHambu2>
+            </NavbarToggle>
+            <NavbarTitle />
+          </>
+        ) : (
+          <>
+            <NavbarTitle />
+            <NavbarToggle onClick={toggleMenu}>
+            </NavbarToggle>
+          </>
+        )}
         <NavbarMenu>
+      
           <NavbarMenuItem>
-            <NavbarLink href="#">Página Inicial</NavbarLink>
+            <NavbarLink href="#">cadastro</NavbarLink>
           </NavbarMenuItem>
           <NavbarMenuItem>
-            <NavbarLink href="#">Sobre</NavbarLink>
+            <NavbarLink href="#">lista</NavbarLink>
           </NavbarMenuItem>
           <NavbarMenuItem>
-            <NavbarLink href="#">Serviços</NavbarLink>
-          </NavbarMenuItem>
-          <NavbarMenuItem>
-            <NavbarLink href="#">Contato</NavbarLink>
+            <NavbarLink href="#">sobre mim</NavbarLink>
           </NavbarMenuItem>
         </NavbarMenu>
       </NavbarContent>
       <DropdownMenu isOpen={isOpen} onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
-        <DropdownMenuItem>
-          <NavbarLink href="#">Página Inicial</NavbarLink>
+      <DropdownMenuItem >
+      <NavbarToggle onClick={toggleMenu}>
+            <NavbarHambu1></NavbarHambu1>
+            </NavbarToggle>
         </DropdownMenuItem>
         <DropdownMenuItem>
-          <NavbarLink href="#">Sobre</NavbarLink>
+          <NavbarLink href="#">cadastro</NavbarLink>
         </DropdownMenuItem>
         <DropdownMenuItem>
-          <NavbarLink href="#">Serviços</NavbarLink>
+          <NavbarLink href="#">lista</NavbarLink>
         </DropdownMenuItem>
         <DropdownMenuItem>
-          <NavbarLink href="#">Contato</NavbarLink>
+          <NavbarLink href="#">sobre mim</NavbarLink>
         </DropdownMenuItem>
       </DropdownMenu>
     </NavbarContainer>
