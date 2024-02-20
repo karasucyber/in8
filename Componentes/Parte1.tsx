@@ -11,8 +11,8 @@ export const Parte1 = () => {
   <Navbar/>
   <ContainerTexto1>
       <ContainerSubTexto1>
-      <FraseEfeito>ESTAGIO</FraseEfeito>
-      <SubFraseEfeito>Prova e seleção</SubFraseEfeito>
+      <FraseEfeito>ESTÁGIO</FraseEfeito>
+      <SubFraseEfeito>PROVA E SELEÇÂO</SubFraseEfeito>
       </ContainerSubTexto1>
   </ContainerTexto1>
 </Container1>

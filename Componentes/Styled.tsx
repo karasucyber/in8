@@ -135,7 +135,7 @@ export const ContainerForm = styled.div({
   justifyContent: "center",
   gap: "10px",
   height: "400px",
-  width: "400px",
+  width: "500px",
 
   '@media only screen and (max-width: 780px)': {
     width: "90%",
