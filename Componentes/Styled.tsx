@@ -180,13 +180,13 @@ export const ButtonCadastro = styled.button`
   font-family: 'Helvetica 25 UltraLight Regular', Arial, sans-serif;
 
   @media screen and (max-width: 768px) {
-    width: 150px;
+    width: 200px;
     height: 60px;
     font-size: 25px;
   }
 
   @media screen and (max-width: 480px) {
-    width: 120px;
+    width: 200px;
     height: 50px;
     font-size: 20px;
   }
