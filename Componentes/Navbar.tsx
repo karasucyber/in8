@@ -135,11 +135,12 @@ const Navbar = () => {
             <NavbarToggle onClick={toggleMenu}>
              <NavbarHambu2></NavbarHambu2>
             </NavbarToggle>
-            <NavbarTitle />
+            <h1> Logo</h1>
+
           </>
         ) : (
           <>
-            <NavbarTitle />
+          <h1> Logo</h1>
             <NavbarToggle onClick={toggleMenu}>
             </NavbarToggle>
           </>
