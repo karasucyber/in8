@@ -179,6 +179,7 @@ export const ContainerButton = styled.div({
   },
 });
 
+
 export const ButtonCadastro = styled.button`
   ${({ theme }) => FontFace};
   width: 200px;
@@ -187,6 +188,18 @@ export const ButtonCadastro = styled.button`
   background: #012d51;
   color: #29abe2;
   font-family: 'Helvetica 25 UltraLight Regular', Arial, sans-serif;
+
+  @media screen and (max-width: 768px) {
+    width: 150px;
+    height: 60px;
+    font-size: 25px;
+  }
+
+  @media screen and (max-width: 480px) {
+    width: 120px;
+    height: 50px;
+    font-size: 20px;
+  }
 `;
 
 export const Titulo2 = styled.h1`
@@ -272,7 +285,7 @@ export const ContainerResponsivo2 = styled.div({
   margin: "auto", // Centralizando horizontalmente
   justifyContent: "flex-start",
   '@media only screen and (max-width: 780px)': {
-    width: "90%",
+    width: "100%",
 
   },
   '@media only screen and (min-width: 781px) and (max-width: 1024px)': {
@@ -296,18 +309,13 @@ export const ContainerResponsivo3 = styled.div({
 
 export const InputN = styled.div({
   width: "90%",
-  height: "15%",
   margin: "10px",
   padding: "2px",
   borderBottom: "1px solid #29abe2",
   '@media only screen and (max-width: 780px)': {
-
   },
   '@media only screen and (min-width: 781px) and (max-width: 1024px)': {
-
   },
-
-
 })
 
 
