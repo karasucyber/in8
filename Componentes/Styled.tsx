@@ -181,9 +181,9 @@ export const ContainerButton = styled.div({
 
 export const ButtonCadastro = styled.button`
   ${({ theme }) => FontFace};
-  width: 100%;
+  width: 200px;
   height: 80px;
-  font-size: 45px;
+  font-size: 35px;
   background: #012d51;
   color: #29abe2;
   font-family: 'Helvetica 25 UltraLight Regular', Arial, sans-serif;
