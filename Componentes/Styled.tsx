@@ -168,16 +168,6 @@ export const Input = styled.input({
   },
 });
 
-export const ContainerButton = styled.div({
-  display: "flex",
-  justifyContent: "center",
-  '@media only screen and (max-width: 780px)': {
-    width: "100%",
-  },
-  '@media only screen and (min-width: 781px) and (max-width: 1024px)': {
-    width: "90%",
-  },
-});
 
 
 export const ButtonCadastro = styled.button`

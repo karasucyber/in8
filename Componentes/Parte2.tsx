@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Container2, ContainerForm, Label, Input,ButtonCadastro, Titulo2, ContainerButton } from "./Styled";
+import { Container2, ContainerForm, Label, Input,ButtonCadastro, Titulo2 } from "./Styled";
 import { TypeCadastro } from "./CRUD/TypeCadastro";
 
 
@@ -56,9 +56,7 @@ export const Parte2 = (props: Props) => {
           <Label >Telefone</Label>
           <Input type="text" value={telefone} onChange={TelefoneChange}></Input>
         </ContainerForm>
-        <ContainerButton>
         <ButtonCadastro type="submit" value="add">CADASTRAR</ButtonCadastro>
-        </ContainerButton>
       </form>
 </Container2>
     </Container2>
