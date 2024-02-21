@@ -248,6 +248,7 @@ export const A2 = styled.a`
   font-family: 'Helvetica 25 UltraLight Regular', Arial, sans-serif;
   color: black;
   font-size: 17px;
+
 `;
 
 
