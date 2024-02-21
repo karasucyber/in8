@@ -246,8 +246,8 @@ export const A1 = styled.a`
 export const A2 = styled.a`
   ${({ theme }) => FontFace};
   font-family: 'Helvetica 25 UltraLight Regular', Arial, sans-serif;
-  color: #808080;
-  font-size: 20px;
+  color: black;
+  font-size: 17px;
 `;
 
 
